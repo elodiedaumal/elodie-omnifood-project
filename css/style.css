@@ -151,7 +151,7 @@
 /**************************************/
 
 .section-how {
-  padding: 9.6rem 0;
+  padding: 6.4rem 0;
 }
 
 .step-img-box {
@@ -207,20 +207,22 @@
 /**************************************/
 
 .section-meals {
-  padding: 9.6rem 0;
+  padding: 6.4rem 0;
   text-align: center;
+  background-color: #fcf8f4;
 }
 
 .meal {
   position: relative;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 12px;
+  background-color: #fff;
 }
 
 .meal:hover {
   /* transform: scale(2.05); */
   transform: translateY(-1.2rem) scale(1.05);
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   transition: all 0.4s;
 }
 
@@ -317,4 +319,84 @@
 .all-recipes {
   text-align: center;
   font-size: 1.8rem;
+}
+
+/**************************************/
+/*  TESTIMONALS */
+/**************************************/
+
+.section-testimonials {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+
+  align-items: start;
+}
+
+.testimonials-container {
+  padding: 6.4rem 9.8rem;
+}
+
+.testimonials {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.8rem;
+  column-gap: 8rem; */
+  display: flex;
+  row-gap: 3.2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials-block {
+  background-color: #fcf8f4;
+  box-shadow: 2px 2px 5px 0.5px rgb(87, 87, 87, 0.9);
+  text-align: justify;
+  padding: 2.4rem;
+  border-radius: 10px;
+  display: flex;
+  column-gap: 3.2rem;
+  position: relative;
+  color: #333;
+}
+
+.testimonial-img {
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  align-self: center;
+}
+
+.testimonial-name {
+  position: absolute;
+  font-size: 1.6rem;
+  color: #555;
+  bottom: 1rem;
+  right: 1.6rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+  align-items: center;
+}
+
+.gallery-items {
+  overflow: hidden;
+}
+.gallery-items img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.gallery-items img:hover {
+  transform: scale(1.15);
 }
