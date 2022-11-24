@@ -208,12 +208,20 @@
 
 .section-meals {
   padding: 9.6rem 0;
+  text-align: center;
 }
 
 .meal {
   position: relative;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 12px;
+}
+
+.meal:hover {
+  /* transform: scale(2.05); */
+  transform: translateY(-1.2rem) scale(1.05);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+  transition: all 0.4s;
 }
 
 .tags {
@@ -284,4 +292,29 @@
 .meal-icon {
   color: #e67e22;
   font-size: 2.4rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-acon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
 }
