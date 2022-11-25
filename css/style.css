@@ -531,7 +531,7 @@
 /**************************************/
 
 .section-cta {
-  padding: 6.45rem 0;
+  padding: 6.45rem 0 12.8rem 0;
 }
 
 .container.cta {
@@ -633,5 +633,84 @@
 }
 
 /* ****************************** */
-/*  GENERAL REUSABLE COMPONENTS */
+/*  FOOTER */
 /* ********************************** */
+
+.footer {
+  padding: 9.6rem 0;
+  /* border-top: 1px solid #eee; */
+  background-color: #333;
+  color: #fff;
+}
+
+.grid--footer {
+  grid-template-columns: 2.5fr 1.7fr 1fr 1fr 1fr;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+  background-color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+  justify-content: center;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: #ddd;
+  line-height: 1.4;
+  margin-top: auto;
+}
+
+.contacts {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-style: normal;
+}
+
+address {
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #ddd;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #fff;
+}
