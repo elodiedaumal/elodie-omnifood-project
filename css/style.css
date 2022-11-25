@@ -329,7 +329,7 @@
   display: grid;
   grid-template-columns: 3fr 2fr;
 
-  align-items: start;
+  align-items: center;
 }
 
 .testimonials-container {
@@ -349,9 +349,9 @@
 }
 
 .testimonials-block {
-  background-color: #fcf8f4;
-  box-shadow: 2px 2px 5px 0.5px rgb(87, 87, 87, 0.9);
-  text-align: justify;
+  /* background-color: #fcf8f4; */
+  /* box-shadow: 2px 2px 5px 0.5px rgb(87, 87, 87, 0.9); */
+  /* text-align: justify; */
   padding: 2.4rem;
   border-radius: 10px;
   display: flex;
@@ -376,8 +376,19 @@
   position: absolute;
   font-size: 1.6rem;
   color: #555;
-  bottom: 1rem;
+  bottom: 0;
   right: 1.6rem;
+}
+
+.testimonial-icon {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.6rem 0.6rem;
+  stroke: #e67e22;
+}
+
+.testimonial-icon--last {
+  margin: -1.2rem 0.6rem;
 }
 
 .gallery {
@@ -399,4 +410,93 @@
 
 .gallery-items img:hover {
   transform: scale(1.15);
+}
+
+/**************************************/
+/*  SECTION PRICING */
+/**************************************/
+
+.section-pricing {
+  padding: 6.45rem 0;
+  text-align: center;
+  background-color: #fcf8f4;
+}
+
+.plan-header {
+  margin-bottom: 4.8rem;
+}
+
+.section-pricing .grid {
+  justify-items: left;
+}
+.pricing-plan.first-plan {
+  justify-self: right;
+  padding: 4.8rem;
+}
+
+.pricing-plan {
+  background-color: #fffffe;
+  border-radius: 12px;
+  padding: 4.8rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  width: 75%;
+  overflow: hidden;
+}
+
+.plan-name {
+  color: #cf711f;
+  font-weight: 600;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #777;
+}
+
+.plan-sign-up {
+  margin-top: 4.8rem;
+}
+
+.first-plan .list-acon:last-child {
+  color: #fcf8f4;
+}
+
+.second-plan {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.35);
+  background-color: #fff;
+  position: relative;
+}
+
+.second-plan::before {
+  content: "BEST VALUE";
+  word-spacing: 0.5rem;
+  position: absolute;
+  font-size: 1.6rem;
+  top: 5%;
+  right: -9%;
+  padding: 0.8rem 3.2rem;
+  background-color: #d9480f;
+  box-shadow: 0 4px 15px 2px rgba(0, 0, 0, 0.25);
+
+  color: white;
+  font-weight: bold;
+  transform: rotate(45deg);
 }
