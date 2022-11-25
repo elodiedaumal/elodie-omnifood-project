@@ -50,6 +50,10 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
@@ -86,6 +90,7 @@ body {
   letter-spacing: 0.5px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -96,7 +101,7 @@ body {
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   font-weight: 600;
-
+  cursor: pointer;
   transition: all 0.3s;
 }
 
