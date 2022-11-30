@@ -665,10 +665,11 @@
               meal is on us!
             </p>
 
-            <form class="cta-form" action="#">
+            <form class="cta-form" name="sign-up" netlify>
               <div>
                 <label for="full-name">Full name</label>
                 <input
+                  name="full-name"
                   required
                   id="full-name"
                   type="text"
@@ -678,6 +679,7 @@
               <div>
                 <label for="email">Email address </label>
                 <input
+                  name="email"
                   required
                   id="email"
                   type="email"
@@ -686,7 +688,7 @@
               </div>
               <div>
                 <label for="select-plan">Select your plan</label>
-                <select required id="select-plan">
+                <select name="plan" required id="select-plan">
                   <option value="">Please choose a plan</option>
                   <option value="Starter">Starter</option>
                   <option value="Complete">Complete</option>
@@ -695,11 +697,16 @@
               </div>
               <div>
                 <label for="starting-date">Starting date</label>
-                <input required id="starting-date" type="date" />
+                <input
+                  name="sarting-date"
+                  required
+                  id="starting-date"
+                  type="date"
+                />
               </div>
               <div class="checked">
                 <label for="check"> Subscribe to our newsletter </label>
-                <input id="check" type="checkbox" />
+                <input name="newsletter" id="check" type="checkbox" />
               </div>
               <button class="btn">Sign up now</button>
             </form>
