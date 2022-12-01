@@ -1,0 +1,36 @@
+.section-receipe-description {
+  background-color: #fdf2e9;
+  padding: 6.4rem 0 3.2rem;
+  max-height: 130rem;
+}
+
+.receipe-text {
+  text-align: center;
+}
+
+.section-diet {
+  text-align: center;
+  background-color: #fdf2e9;
+  padding-bottom: 3.2rem;
+}
+
+.diet-close .section-diet {
+   {
+  }
+}
+
+.diets-list {
+  border: 2px solid;
+  padding: 2.4rem;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.section-receipe-meals {
+  background-color: #fff;
+}
+
+.section-receipe-meals .heading-secondary {
+  margin-top: 2.4rem;
+  text-align: center;
+}
