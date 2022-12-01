@@ -241,6 +241,9 @@
   .logo-col {
     grid-column: span 3;
   }
+  .about-img {
+    max-width: 35rem;
+  }
 }
 
 /*  *********************************** */
@@ -307,6 +310,17 @@
   }
   .grid--footer {
     column-gap: 2.4rem;
+  }
+
+  .about-img-box:nth-child(1) {
+    grid-row: 2;
+  }
+  .about-img {
+    max-width: 50rem;
+  }
+  .about-img-box.goal-img,
+  .about-img-box.principe-img {
+    justify-self: left;
   }
 }
 
