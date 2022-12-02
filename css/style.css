@@ -275,6 +275,7 @@
 .tag {
   /* display: inline-block; */
   padding: 0.4rem 0.8rem;
+  text-align: center;
   font-size: 1.1rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -294,6 +295,32 @@
 
 .tag--paleo {
   background-color: #ffa033;
+}
+
+.tag--kid {
+  background-color: #f54cec;
+}
+.tag--protein {
+  background-color: #ff3737;
+}
+.tag--meat {
+  background-color: #8c96ff;
+}
+
+.tag--gluten {
+  background-color: #eaf124;
+}
+.tag--pescatarian {
+  background-color: #c370ae;
+}
+.tag--fodmap {
+  background-color: #fa7c37;
+}
+.tag--keto {
+  background-color: #ff9999;
+}
+.tag--liquid {
+  background-color: #c3ffb2;
 }
 
 .meal-content {
@@ -325,6 +352,7 @@
 
 .meal-img {
   width: 100%;
+  height: 25rem;
   border-radius: 12px 12px 0px 0px;
 }
 

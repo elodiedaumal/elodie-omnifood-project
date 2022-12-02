@@ -2,8 +2,8 @@
 
 const btnDietEl = document.querySelector(".btn-diet");
 const dietEl = document.querySelector(".section-diet");
-btnDietEl.addEventListener("click", function () {
-  dietEl.classList.toggle("diet-close");
+btnDietEl.addEventListener("click", () => {
+  document.body.classList.toggle("diet-open");
 });
 
 console.log("hello world!");
