@@ -249,6 +249,12 @@
   .section-diet .grid--3-cols {
     gap: 0;
   }
+  .form-image-box {
+    display: none;
+  }
+  .form {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*  *********************************** */
