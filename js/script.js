@@ -33,6 +33,10 @@ alllinks.forEach(function (link) {
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
 
+    if (href.contains("html")) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.location.replace(href);
+    }
     //close mobile nav when click on a link
     if (link.classList.contains("main-nav-link"))
       headerEl.classList.toggle("nav-open");

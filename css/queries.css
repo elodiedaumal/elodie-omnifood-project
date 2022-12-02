@@ -88,7 +88,8 @@
     font-size: 7.4rem;
   }
 
-  .meal-content {
+  .meal-content,
+  .section-receipe-meals {
     padding: 2.4rem;
     padding-bottom: 3.2rem;
   }
@@ -244,6 +245,10 @@
   .about-img {
     max-width: 35rem;
   }
+
+  .section-diet .grid--3-cols {
+    gap: 0;
+  }
 }
 
 /*  *********************************** */
@@ -321,6 +326,9 @@
   .about-img-box.goal-img,
   .about-img-box.principe-img {
     justify-self: left;
+  }
+  .section-pagination {
+    transform: scale(0.8);
   }
 }
 

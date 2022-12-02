@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -39,6 +39,7 @@
       src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
     ></script>
     <script defer src="js/receipe.js"></script>
+    <script defer src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/queries.css" />
@@ -47,7 +48,7 @@
   </head>
   <body>
     <header class="header">
-      <a href="/index.html">
+      <a href="index.html">
         <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
       </a>
 
@@ -56,15 +57,19 @@
           <li>
             <a class="main-nav-link" href="index.html#how">How it works</a>
           </li>
-          <li><a class="main-nav-link" href="index#meals">Meals</a></li>
+          <li><a class="main-nav-link" href="receipe.html">Meals</a></li>
           <li>
-            <a class="main-nav-link" href="index#testimonials">Testimonials</a>
+            <a class="main-nav-link" href="index.html#testimonials"
+              >Testimonials</a
+            >
           </li>
-          <li><a class="main-nav-link" href="index#pricing">Pricing</a></li>
-          <li><a class="main-nav-link" href="about-us.html">About us</a></li>
+          <li>
+            <a class="main-nav-link" href="index.html#pricing">Pricing</a>
+          </li>
+          <li><a class="main-nav-link" href="about.html">About us</a></li>
 
           <li>
-            <a class="main-nav-link nav-cta" href="index/#cta">Try for free</a>
+            <a class="main-nav-link nav-cta" href="form.html">Try for free</a>
           </li>
         </ul>
       </nav>
@@ -79,7 +84,9 @@
       <section class="section-cta" id="cta">
         <div class="container cta">
           <div class="cta-text-box">
-            <h2 class="heading-secondary">Get your first meal for free!</h2>
+            <h2 class="heading-secondary">
+              Start eating well without cooking!
+            </h2>
 
             <p class="cta-text">
               Healthy, tasty and hassle-free meals are waiting for you. Start
@@ -99,6 +106,16 @@
                 />
               </div>
               <div>
+                <label for="adress">Complete address</label>
+                <input
+                  name="adress"
+                  required
+                  id="adress"
+                  type="text"
+                  placeholder="21 omnifood street 12345 Munich "
+                />
+              </div>
+              <div>
                 <label for="email">Email address </label>
                 <input
                   name="email"
@@ -114,7 +131,18 @@
                   <option value="">Please choose a plan</option>
                   <option value="Starter">Starter</option>
                   <option value="Complete">Complete</option>
-                  <option value="Free sample">Free sample</option>
+                </select>
+              </div>
+              <div>
+                <label for="free meal">Receive meal for free</label>
+                <select name="meal" required id="select-plan">
+                  <option value="">Please choose a meal</option>
+                  <option value="Avocado salad">Avocado salad</option>
+                  <option value="Hamburger">Hamburger</option>
+                  <option value="Green veggies soup">Green veggies soup</option>
+                  <option value="Spicy rice curry">Spicy rice curry</option>
+                  <option value="Bolognese pasta">Bolognese pasta</option>
+                  <option value="Pork ramen">Pork ramen</option>
                 </select>
               </div>
               <div>
