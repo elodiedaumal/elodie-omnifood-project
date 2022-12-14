@@ -7,6 +7,8 @@ btnDietEl.addEventListener("click", () => {
   btnDietEl.classList.toggle('buttonsReceipeActive')
 });
 
+//recipe page meal filter 
+
 
 const tagElAll = Array.from(document.querySelectorAll('.meal'))
 const tagElKids = Array.from(document.querySelectorAll('.kids'))
@@ -26,50 +28,46 @@ function removeShow() {
   })
 }
 
-console.log(btTagEl)
-
 function removeActive() {
   btTagEl.forEach(function (node, idx) {
     node.classList.remove('buttonsReceipeActive')
-  })
-    
-  
+  });
 }
 
 function addShowAll(){
-    removeActive();
+  removeActive();
   btnTagElAll.classList.add('buttonsReceipeActive');
-tagElAll.forEach(function (node, idx) {
-  node.classList.add('show')
+  tagElAll.forEach(function (node, idx) {
+   node.classList.add('show');
 })}
 
 function addShowKids(){
-    removeActive();
-    btnTagElKids.classList.add('buttonsReceipeActive')
-   removeShow();
-tagElKids.forEach(function (node, idx) {
-  node.classList.add('show')
+  removeActive();
+  btnTagElKids.classList.add('buttonsReceipeActive')
+  removeShow();
+  tagElKids.forEach(function (node, idx) {
+   node.classList.add('show');
 })}
 function addShowGluten(){
-    removeActive();
-    btnTagElGluten.classList.add('buttonsReceipeActive')
-   removeShow();
-tagElGluten.forEach(function (node, idx) {
-  node.classList.add('show')
+  removeActive();
+  btnTagElGluten.classList.add('buttonsReceipeActive')
+  removeShow();
+  tagElGluten.forEach(function (node, idx) {
+   node.classList.add('show');
 })}
 function addShowLiquid(){
   removeActive();
   btnTagElLiquid.classList.toggle('buttonsReceipeActive');
-   removeShow();
-tagElLiquid.forEach(function (node, idx) {
-  node.classList.add('show')
+  removeShow();
+  tagElLiquid.forEach(function (node, idx) {
+   node.classList.add('show');
 })}
 function addShowMeat(){
   removeActive();
   btnTagElMeat.classList.add('buttonsReceipeActive');
-   removeShow();
-tagElMeat.forEach(function (node, idx) {
-  node.classList.add('show')
+  removeShow();
+  tagElMeat.forEach(function (node, idx) {
+   node.classList.add('show');
 })}
 
 
